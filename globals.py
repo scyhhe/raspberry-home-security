@@ -87,13 +87,13 @@ def init():
 
 	# Set this to True if you want to send outputs to the screen
 	# This is useful for debugging
-	PrintToScreen=False
+	PrintToScreen=True
 
 	# If you want to receive email alerts define SMTP email server details
 	# This is the SMTP server, username and password trequired to send email through your internet service provider
-	smtp_server="" # usually something like smtp.yourisp.com
-	smtp_user=""   # usually the main email address of the account holder
-	smtp_pass=""   # usually your email address password
+	smtp_server="smtp.gmail.com" # usually something like smtp.yourisp.com
+	smtp_user="mrkstinger@gmail.com"   # usually the main email address of the account holder
+	smtp_pass="06026203"   # usually your email address password
 	email_type=1   # 1 for No Encryption, 
 				   # 2 for SSL and 
 				   # 3 and TLS
@@ -124,11 +124,11 @@ def init():
 
 	#Auto restart settings
 	auto_dallas = False
-	auto_alarm = False
+	auto_alarm = True
 	auto_dht22 = False
 	auto_rfsensor = False
-	auto_lcd = False
-	auto_control = False
+	auto_lcd = True
+	auto_control = True
 	install_directory = "/home/pi/pep" #The PrivateEyePi software directory
 
 	# Set this to true if you want to connect an external siren. Put siren activation and deactivation code in the Siren function.
@@ -161,14 +161,14 @@ def init():
 
 	#Configure an LCD panel here
 	LCDTemperature=False
-	LCDAlarmActivity=False
+	LCDAlarmActivity=True
 	LCDChime=False
 	lcd_ip="127.0.0.1"
 
 	#Set this setting to True if you want to be able to send control commands from the web to your Raspberry Pi
 	#The default to not allow external control
 	#Applies to switch GPIO, send photos, or switch relay
-	AllowExternalControl=False
+	AllowExternalControl=True
 	
 	#An RF Mofule (like the FLEX) can support multiple sensors at the same time, 
 	#but each RF module has one ID. The following prefixes are appended to the front 
@@ -179,7 +179,3 @@ def init():
 	HUMPrefix="3"
 	ANABPrefix="4"
 	BUTTONPrefix="" #not configured by default but add a prefix if you want to combine a BUTTON swicth with temperature
-	
-	
-	
-

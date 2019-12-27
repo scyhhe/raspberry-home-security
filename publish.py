@@ -11,7 +11,7 @@ globals.init()
 #RecordSet[1] : Location       
 #RecordSet[2] : Display Message
 #RecordSet[3] : type 1=Switch Open, 2=Switch Closed, 3=Temperature, 4=Temperature & Humidity, 5=Free format String, 6=Arm/Disarm, 7=Log, 8 = Alarm
-#RecordSet[4] : Tempeature Value
+#RecordSet[4] : Temperature Value
 #RecordSet[5] : Humidity Value
 #RecordSet[6] : Unit of measure, 0=Centigrade, 1=Fahrenheit
 #RecordSet[7] : Armed/Disarmed 1=Armed, 2=Disarmed

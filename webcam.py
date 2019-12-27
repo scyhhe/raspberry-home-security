@@ -38,12 +38,12 @@ SensorNumber = 99
 # If you have a GMAIL or Yahoo account or one that uses encryption you need to make the relevant changes 
 # to the SendEmailPhoto() and SendEmail() functions below. For help on how to do this go to:
 # http://projects.privateeyepi.com/home/home-alarm-system-project/installation/configure-alarmpy-with-user-and-password
-smtp_server=""    # usually something like smtp.yourisp.com or smtp.gmail.com or smtp.mail.yahoo.com
-smtp_user=""      # usually the main email address of the account holder
-smtp_pass=""      # usually your email address password
+smtp_server="smtp.gmail.com"    # usually something like smtp.yourisp.com or smtp.gmail.com or smtp.mail.yahoo.com
+smtp_user="mrkstinger@gmail.com"      # usually the main email address of the account holder
+smtp_pass="06026203"      # usually your email address password
 
 #Token that has been registered on www.privateeyepi.com website
-token=""
+token="acc8c3c811914ee354679919b8d4754c"
 
 # Set this to True if you want to send outputs to the screen
 # This is useful for debugging
@@ -60,7 +60,7 @@ SendEmails=True
 #set the following to True if you want to attach photos
 #to your email alerts. The latest photo specified in the
 #photopath directory will be sent
-EmailPhoto=False
+EmailPhoto=True
 
 def get_latest_photo(files):
     lt = operator.lt
